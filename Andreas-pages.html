@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andreas-pages</title>
+    <style>
+        * {
+     margin: 0px;  
+    
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  nav {  
+    position:fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;  
+    padding: -10px 0px 0px 0px; 
+  }
+  nav .mainMenu li a:hover {
+    background: rgb(255, 94, 0);
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  nav .logo {
+    font-size: 1.5rem;
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+ul{
+    justify-content: center;
+      align-items: center;
+}
+.list{
+    padding:0px;
+    margin: 20px;
+}
+h4{ 
+    display: block;
+    width: 80%;
+    margin: 20px;
+}
+#name{
+  display:block;
+}
+table{
+    width: 100%;
+    margin: 0px;   
+}
+</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+</head>
+<body>
+        <nav>
+            <div class="logo"><i class="fa  fa-laptop"></i><h10>Web_developer</h10></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="https://andreas-hodo.github.io/-/Αλγόριθμος Κ.Κονιδάρι (2022-11-20).html">Αλγόριθμος Κ.Κονιδάρι</a></li>
+                <li><a href="https://andreas-hodo.github.io/Chess-game/chess.html">Chess</a></li>
+                <li><a href="https://andreas-hodo.github.io/My_First_Web_Page/(Τελευταίο).html">My_First_Page</a></li>
+                <li><a href="https://andreas-hodo.github.io/Game/">Game</a></li>
+                   <li><a href="https://andreas-hodo.github.io/Oi_prodotes/oiprodotes.html">Οι προδότες</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+            
+        </nav>
+<h2 class="name">Γεια σας ειμαι ο Ανδρέας</h2>
+<h4>Παρακατω ειναι οι ιστοσελίδες που εχω δημιουργήσει:</h4>
+<h4>Σκακι</h4><h4>Πως να παίξετε σκάκι:</h4>
+<h4>Η σκακιέρα αποτελείται απο 64 κουτάκια 8 οριζόντια και 8 κάθετα χρωματος λευκου και μαυρου εναλλαξ</h4>
+<h4>1) Στήσιμο</h4>
+<p id = "content">
+<ul>
+    <li class = "list">Οι πύργοι μπαίνουν στις ακρες της σκακιέρας</li>
+    <li class = "list">Τα άλογα μπαίνουν διπλα στους πύργους</li>
+     <li class = "list">Οι αξιωματικοί μπαίνουν διπλα στα άλογα</li>
+    <li class = "list">Η βασίλισσα και ο βασιλιάς μπαίνουν διπλα στους αξιοματικους, <b>η βασίλισσα μπαίνει παντα στο χρώμα της(πχ. εαν η βασίλισσα ειναι χρωματος λευκου θα μπει διπλα στον αξιοματικο που το κουτακι του  εχει μαυρο χρώμα)</b> και ο βασιλιάς μπαίνει στο αντίθετο χρώμα.</li>
+     <li class = "list">Στην δεύτερη σειρα μπαίνουν τα πιόνια.</li>
+</ul>
+<h4>2) Κινήσεις: </h4>
+<ul>
+  <li class = "list">Οι πύργοι κινούνται ευθεία προς ολες τις κατευθύνσεις(εντος της σκακιέρας).</li>
+    <li class = "list">Τα άλογα κινούνται σχηματίζοντας το γράμμα"Γ" (εντος της σκακιέρας), δηλαδή 2 κινήσεις μπροστά και μια δεξια ή αριστερά</li>
+     <li class = "list">Οι αξιωματικοί κινούνται πλαγίος στο χρωμα που ξεκίνησαν αρχικά εντος της σκακιέρας πχ.(ο αξιωματικός που ξεκινα σε κουτακι λευκου χρωματος κινείται πλαγια μονο σε λευκα κουτιά)</li>
+    <li class = "list">Η βασίλισσα μπορεί να κανει τις κινήσεις του αξιοματικου και του πύργου ταυτόχρονα εντος της σκακιέρας(δηλαδή μπορεί να κινηθει και πλάγια και ευθεία)</li>
+    <li class = "list">Ο βασιλιάς μπορεί να κινηθεί προς ολες τις κατευθύνσεις κατα ενα κουτάκι</li>
+    <li class = "list">Τα πιονια κινούνται στην αρχικη τους θεση δυο κουτακια μπροστά και στις υπόλοιπες θέσεις ενα κουτακι μπροστά.(δεν μπορούν να κινηθούν προ τα πισω)</li>
+<b>Σημείωση: Πρώτος παιζει ο παίκτης με τα λευκα.Επίσης δεν γίνεται δυο πιόνια να βρίσκονται στο ιδιο κουτακι ουτε καποιο πιονι να περάσει πανω απο κουτακι το οποιο περιέχει καποιο πιονι ιδίου χρώματος(εκτος απο τα άλογα που ειναι τα μονα πιονια που μπορούν να περάσουν πανω απο αλλα πιόνια)</b>
+</p>
+</ul>
+<h4>3) Αιχμαλωσία: </h4>
+<ul>
+ <li class = "list">Οταν δυο πιονια βρεθούν στο ίδιο κουτακι μετα απο μια κίνηση <b>το δεύτερο πιόνι αιχμαλωτιζει το πρώτο</b>(το δεύτερο πιονι που αιχμαλωτίστηκε βγαίνει εκτος της σκακιέρας)</li>
+ <li class = "list">Το καθε πιονι αιχμαλωτιζει ετσι οπως ακριβώς ειναι οι κινησεις του πχ. ο πυργος αιχμαλωτιζει ευθεία ο αξιωματικός πλαγια κ.τ.λ.π.</li>
+<b>Σημείωση: Τα πιόνια αιχμαλωτιζουν <big>Μονο πλάγια </big>κατα ενα κουτακι και οταν βρίσκεται κάποιο οποιοδήποτε αλλο πιονι (της ίδιας ομαδας και μη)<big>Μπροστά</big> στο πιόνι δεν μπορεί να κινηθεί ουτε να το αιχμαλωτίσει.</b> Επισεις<big><b> Ο ΒΑΣΙΛΙΑΣ ΔΕΝ ΜΠΟΡΕΙ ΝΑ ΑΙΧΜΑΛΩΤΙΣΤΕΙ</b></big>
+</ul>
+<h4>4)Αξια πιονιών:</h4>
+<table border><thead><tr><th>Τύπος</th><th>Αξία</th></tr></thead><tbody><tr><td>Πύργος:</td><td>5</td></tr><tr><td>Άλογο:</td><td>3</td></tr><tr><td>Αξιοματικός:</td><td>3</td></tr><tr><td>Βασίλισσα:</td><td>9</td></tr><tr><td>Βασιλιάς:</td><td>άπειρη</td></tr><tr><td>Πιόνι:</td><td>1</td></tr></tbody></table>
+<h4>5) Σαχ:</h4>
+<ul>
+ <li class = "list">Οταν ενας βασιλιάς βρίσκεται υπο το καθεστώς απειλής λεμε οτι βρίσκεται σε σαχ. Οταν ο βασιλιάς βρίσκεται σε σαχ θα πρέπει ειτε να μετακινηθεί ωστε να παυσει να βρίσκεται σε σαχ ειτε να βρεθει κάποια κίνηση απο καποιο πιονι ωστε να διακοπτει τον δρομο στο αντιπαλο πιονι που απειλει τον βασιλιά.</li>
+</ul>
+<h4>6) Ειδικές κινήσεις: </h4>
+<ul>
+ <li class = "list">Προαγωγή: Μολις καποιο πιονι φτάσει στην 8η σειρά είτε μεσω κάποιας αιχμαλωσίας είτε ευθεία τοτε ο παίκτης αυτος εχει το δικαίωμα να προάγει το πιονι αυτο  σε: 
+ <ol>
+  <li>Πύργο</li>
+   <li>Άλογο</li>
+    <li>Αξιοματικό</li>
+     <li>Βασίλισσα</li>
+ </ol>
+ <li class = "list">Ροκέ: Το ροκε ειναι μια ειδικη κινηση η όποια γινεται μεταξύ του βασιλιά και ενος εκ των πύργων καθε φορα. Για να ειναι δυνατό το ροκέ θα πρέπει να ισχύουν καποιες προϊποθέσεις:
+ <ol>
+  <li>Να μην βρίσκεται ο βασιλιάς σε σαχ την δεδομένη στιγμή.</li>
+   <li>Να μην απειλούνται τα ενδιαμεσα κουτακια απο τα οποια θα περάσει ο βασιλιάς</li>
+    <li>Ο βασιλιάς δεν πρέπει να εχει μετακινηθει   
+<b>ποτέ</b> απο την αρχικη του θέση</li>
+     <li>Ο πύργος με τον οποίο θα γίνει το ροκέ δεν πρέπει να έχει μετακινηθεί <b>ποτέ</b> απο την θεση του</li>
+      <li>Να μην υπαρχει κάποιο πιονι ανάμεσα στον βασιλιά και τον πυργο με τον οποιο θα γίνει το ροκέ</li>
+  <li>Υπάρχουν 2 ειδων ροκε:<ol><li>Το μικρο ροκέ: Το οποιο γίνεται με τον πύργο του βασιλιά </li><li>Το μεγάλο ροκέ: Το οποιο γίνεται με τον πύργο της βασίλισσας</li></ol></li>
+ </ol>
+ </li>
+ </li>
+</ol>
+
+<li class = "list">En passant(εν διελεύσει) Ειναι μια κινηση η όποια γίνεται οταν ενα πιονι φτάσει στην 3 ή στην 5 σειρά  αντίστοιχα και ο αντίπαλος να μετακινησει το πιονι που βρίσκεται στην δεξιά  οριζόντια γραμμή ή αριστερά στην οριζόντια γραμμή. Τα πιονια αυτα πριν απο αυτην την κινηση βρίσκονται στην ιδια σειρά το ενα δίπλα στο αλλο. Ο παίκτης που εχει την δυνατότητα του en passant μπορεί να αιχμαλωτίσει το αντίπαλο πιονι πλαγια και να μετακινηθεί στην θεση οπου θα αιχμαλωτιζε το πιονι.</li>
+</ul>
+<b>Σημείωση: Οταν ειναι διαθέσιμο το en passant αλλα ο παικτης δεν το κανει και κανει καποια αλλη κινηση οταν ξαναέρθει η σειρά του δεν ειναι διαθεσημη η κινηση en passant με το πιονι το οποιο ηταν διπλα στο πιονι του παικτη που ειχε διαθεσημη την κινηση αυτη, αλλα εαν ο αντιπαλος μετακινήσει το αλλο πιονι δυο κουτακια μπροστά τοτε το en passant θα ειναι διαθέσιμο μονο με το δεύτερο πιονι και αν δεν το ξανακανει το en passant τοτε χανει το δικαίωμα  της κινησης en passant για αυτο το πιονι, αλλα ισχυουν οι παραπανω κανονες και για τα υπόλοιπα 7 πιόνια και για τους 2 παίκτες</b>
+<script>
+     const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+// close menu when you click on a menu item 
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    })
+})
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    mainMenu.style.top = '-101%';
+}
+  
+    </script>
+</body>
+</html>
+
